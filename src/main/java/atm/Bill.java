@@ -2,5 +2,5 @@ package atm;
 
 public interface Bill {
     void setNext(Bill next);
-    void process(int amount) throws IllegalAccessException;
+    void process(int amount) ;
 }

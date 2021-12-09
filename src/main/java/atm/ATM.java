@@ -12,7 +12,7 @@ public class ATM {
         bill10.setNext(bill5);
         firstBill = bill20;
     }
-    public void process(int amount) throws IllegalAccessException {
+    public void process(int amount)  {
         firstBill.process(amount);
     }
 }

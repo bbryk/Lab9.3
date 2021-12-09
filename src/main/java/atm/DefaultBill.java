@@ -14,15 +14,15 @@ public class DefaultBill implements  Bill{
     }
 
     @Override
-    public void process(int amount) throws IllegalAccessException {
+    public void process(int amount)  {
         // add exception that would be raised here if th amount could not be handled
 
         if (next != null){
             next.process(amount % billAmount);
         }else if(amount % billAmount !=0){
-            throw new IllegalAccessException();
+            throw new IllegalArgumentException("Not dividable by 5");
         }
-        System.out.println("Please receive " + amount/billAmount + " of " + billAmount + " UAH bills!!!!!");
+        System.out.println("Please receive " + amount/billAmount + " of " + billAmount + " UAH bills!");
 
 
     }

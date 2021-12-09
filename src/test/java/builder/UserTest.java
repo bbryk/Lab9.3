@@ -19,7 +19,5 @@ class UserTest {
         assertEquals(user.toString(), expRes);
     }
 
-    @Test
-    void builder() {
-    }
+
 }
